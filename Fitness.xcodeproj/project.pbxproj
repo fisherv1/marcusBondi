@@ -494,6 +494,9 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "Matthew Lu";
 				TargetAttributes = {
+					78454F6D199C96B500563F95 = {
+						DevelopmentTeam = SZYJ32EXLF;
+					};
 					78454F8E199C96B500563F95 = {
 						TestTargetID = 78454F6D199C96B500563F95;
 					};
@@ -716,6 +719,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fitness/Fitness-Prefix.pch";
 				INFOPLIST_FILE = "Fitness/Fitness-Info.plist";
@@ -730,11 +734,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Juehua Lu (SZYJ32EXLF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Juehua Lu (SZYJ32EXLF)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Fitness/Fitness-Prefix.pch";
 				INFOPLIST_FILE = "Fitness/Fitness-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "f9220622-a8b1-4b0e-8fff-6398c0113868";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
