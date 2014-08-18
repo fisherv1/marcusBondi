@@ -9,8 +9,10 @@
 #import "BreakView.h"
 #import "CountDownMarco.h"
 #import "ToolMethod.h"
+//#import "UIImage+ImageEffects.h"
 @interface BreakView()
 {
+    UIImageView *backgroundView;
     UILabel *breakTextLabel;
     UILabel *countDownLabel;
     UIButton *nextButton;
@@ -21,11 +23,11 @@
 @end
 
 
-const int kBREAD_TEXT_FONT_SIZE = 25;
-const int kNEXT_BUTTON_FONT_SIZE = 16;
+const int kBREAD_TEXT_FONT_SIZE = 35;
+const int kNEXT_BUTTON_FONT_SIZE = 25;
 @implementation BreakView
 
-- (id)initWithFrame:(CGRect)frame
+- (id)initWithFrame:(CGRect)frame andSnapshot :(UIImage*)snapshotImg
 {
     self = [super initWithFrame:frame];
     if (self) {
@@ -34,6 +36,7 @@ const int kNEXT_BUTTON_FONT_SIZE = 16;
        // self.backgroundColor = [UIColor redColor];
        // self.alpha = 0.5f;
     
+        [self addBackgroundImageView:snapshotImg];
         [self addBreadTextLabel];
         [self addCountDownLabel];
         [self addNextButton];
@@ -43,11 +46,20 @@ const int kNEXT_BUTTON_FONT_SIZE = 16;
 }
 
 
+-(void)addBackgroundImageView:(UIImage*)snapshotImg
+{
+    
+    backgroundView = [[UIImageView alloc]initWithFrame:CGRectMake(0, 0, DeviceWidth, DeviceHeight)];
+    backgroundView.image =snapshotImg;
+    backgroundView.userInteractionEnabled = YES;
+    [self addSubview:backgroundView];
+}
+
 -(void)addBreadTextLabel{
 
-    breakTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, DeviceHeight/2-100, DeviceWidth, 20)];
+    breakTextLabel = [[UILabel alloc]initWithFrame:CGRectMake(0, DeviceHeight/2-100, DeviceWidth, 50)];
     breakTextLabel.textAlignment = NSTextAlignmentCenter;
-    [breakTextLabel setFont:[UIFont fontWithName:@"Futura-CondensedMedium" size:kBREAD_TEXT_FONT_SIZE]];
+    [breakTextLabel setFont:[UIFont fontWithName:FUTURA_FONT size:kBREAD_TEXT_FONT_SIZE]];
     
     breakTextLabel.text = BREAK;
     
@@ -57,12 +69,12 @@ const int kNEXT_BUTTON_FONT_SIZE = 16;
 }
 
 -(void)addCountDownLabel{
-    countDownLabel =[[UILabel alloc]initWithFrame:CGRectMake(0, breakTextLabel.frame.origin.y+breakTextLabel.frame.size.height+10,DeviceWidth , 50)];
+    countDownLabel =[[UILabel alloc]initWithFrame:CGRectMake(0, breakTextLabel.frame.origin.y+breakTextLabel.frame.size.height+30,DeviceWidth , 50)];
     
     
     countDownTime = kCOUNT_TIME;
     countDownLabel.textAlignment = NSTextAlignmentCenter;
-    [countDownLabel setFont:[UIFont fontWithName:@"Futura-CondensedMedium" size:kCOUNT_DOWN_LABEL_FONT_SIZE]];
+    [countDownLabel setFont:[UIFont fontWithName:FUTURA_FONT size:kCOUNT_DOWN_LABEL_FONT_SIZE]];
     
     countDownLabel.text = THIRTY_SECOND;
     
@@ -71,7 +83,7 @@ const int kNEXT_BUTTON_FONT_SIZE = 16;
 
 -(void)addNextButton{
 
-    nextButton = [[UIButton alloc]initWithFrame:CGRectMake(110,countDownLabel.frame.origin.y+countDownLabel.frame.size.height+20, 100, 30)];
+    nextButton = [[UIButton alloc]initWithFrame:CGRectMake(85,countDownLabel.frame.origin.y+countDownLabel.frame.size.height+40, 150, 50)];
 
 
     
@@ -79,11 +91,13 @@ const int kNEXT_BUTTON_FONT_SIZE = 16;
     
     [nextButton addTarget:self action:@selector(nextAction:) forControlEvents:UIControlEventTouchUpInside];
     
-    nextButton.titleLabel.font =  [UIFont fontWithName:@"Futura-CondensedMedium" size:kNEXT_BUTTON_FONT_SIZE];
+    nextButton.titleLabel.font =  [UIFont fontWithName:FUTURA_FONT size:kNEXT_BUTTON_FONT_SIZE];
     
     [nextButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
     nextButton.backgroundColor = [UIColor blackColor];
-    [self addSubview:nextButton];
+    //[self addSubview:nextButton];
+    
+    [backgroundView addSubview:nextButton];
 }
 
 
@@ -120,6 +134,7 @@ const int kNEXT_BUTTON_FONT_SIZE = 16;
         [self removeFromSuperview];
     }];
 }
+
 
 
 /*

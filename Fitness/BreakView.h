@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface BreakView : UIView
-
+- (id)initWithFrame:(CGRect)frame andSnapshot :(UIImage*)snapshotImg;
 @end

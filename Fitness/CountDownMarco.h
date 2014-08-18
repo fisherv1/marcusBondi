@@ -30,7 +30,7 @@
 
 
 #define BREAK @"Take a 30 sec break"
-static const int kCOUNT_TIME = 5;
+static const int kCOUNT_TIME = 2;
 static const int kCOUNT_DOWN_LABEL_FONT_SIZE = 60;
 
 #define CELL_MAX_HEIGHT 1000.f

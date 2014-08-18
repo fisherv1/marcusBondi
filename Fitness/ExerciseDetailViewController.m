@@ -13,6 +13,7 @@
 #import "CountDownMarco.h"
 #import "BreakView.h"
 #import "ToolMethod.h"
+#import "UIImage+ImageEffects.h"
 
 @interface ExerciseDetailViewController ()
 {
@@ -28,6 +29,36 @@
 
 @implementation ExerciseDetailViewController
 @synthesize exercise,scrollView,descLabel;
+
+
+
+-(UIImage *)blurredSnapshot
+{
+    // context
+    UIGraphicsBeginImageContextWithOptions(self.view.bounds.size, NO, self.view.window.screen.scale);
+    
+    // the new api
+    [self.view drawViewHierarchyInRect:self.view.frame afterScreenUpdates:NO];
+    
+    // get snapshots
+    UIImage *snapshotImage = UIGraphicsGetImageFromCurrentImageContext();
+    
+    
+    // apple the blur effect to the image
+    UIImage *blurredSnapshotImage = [snapshotImage applyLightEffect];
+    
+    // other effects
+    // UIImage *blurredSnapshotImage = [snapshotImage applyDarkEffect];
+    // UIImage *blurredSnapshotImage = [snapshotImage applyExtraLightEffect];
+    
+    
+    UIGraphicsEndImageContext();
+    
+    return blurredSnapshotImage;
+}
+
+
+
 
 
 
@@ -61,7 +92,7 @@
 -(void)changeWorkout{
 
     int nextExerciesID = exercise.exerciseID +1;
-    NSLog(@"%d",nextExerciesID);
+    //NSLog(@"%d",nextExerciesID);
     if (nextExerciesID != 7) {
      exercise = [ExerciseFactory getWorkout:exercise.exerciseID +1];
     }
@@ -87,10 +118,10 @@
 
 -(void)addBreadView
 {
-    breadView = [[BreakView alloc] initWithFrame:CGRectMake(0, 0, DeviceWidth, DeviceHeight)];
+    breadView = [[BreakView alloc] initWithFrame:CGRectMake(0, 0, DeviceWidth, DeviceHeight) andSnapshot:[self blurredSnapshot]];
     
-    breadView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.8];
-    breadView.alpha = 0;
+//    breadView.backgroundColor = [UIColor colorWithWhite:1 alpha:0.8];
+//    breadView.alpha = 0.8;
     breadView.transform = CGAffineTransformMakeScale(0.8, 0.8);
     
     [UIView animateWithDuration:0.3

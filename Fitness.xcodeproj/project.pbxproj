@@ -23,6 +23,7 @@
 		7817937B199F1B1200760372 /* 3@2x.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 78179378199F1B1200760372 /* 3@2x.jpg */; };
 		7817937E199F2BF800760372 /* ExerciseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7817937D199F2BF800760372 /* ExerciseTableViewController.m */; };
 		78179381199F319200760372 /* ExerciseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 78179380199F319200760372 /* ExerciseTableViewCell.m */; };
+		7840AD4219A17F3800848F66 /* UIImage+ImageEffects.m in Sources */ = {isa = PBXBuildFile; fileRef = 7840AD4119A17F3800848F66 /* UIImage+ImageEffects.m */; };
 		78454F72199C96B500563F95 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78454F71199C96B500563F95 /* Foundation.framework */; };
 		78454F74199C96B500563F95 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78454F73199C96B500563F95 /* CoreGraphics.framework */; };
 		78454F76199C96B500563F95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 78454F75199C96B500563F95 /* UIKit.framework */; };
@@ -99,6 +100,8 @@
 		7817937D199F2BF800760372 /* ExerciseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewController.m; sourceTree = "<group>"; };
 		7817937F199F319200760372 /* ExerciseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ExerciseTableViewCell.h; sourceTree = "<group>"; };
 		78179380199F319200760372 /* ExerciseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ExerciseTableViewCell.m; sourceTree = "<group>"; };
+		7840AD4019A17F3800848F66 /* UIImage+ImageEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+ImageEffects.h"; sourceTree = "<group>"; };
+		7840AD4119A17F3800848F66 /* UIImage+ImageEffects.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+ImageEffects.m"; sourceTree = "<group>"; };
 		78454F6E199C96B500563F95 /* Fitness.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Fitness.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		78454F71199C96B500563F95 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		78454F73199C96B500563F95 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -222,6 +225,15 @@
 				7817936A199F1B0D00760372 /* 6@2x.jpg */,
 			);
 			name = exerciseImg;
+			sourceTree = "<group>";
+		};
+		7840AD3F19A17F2200848F66 /* ViewBlur */ = {
+			isa = PBXGroup;
+			children = (
+				7840AD4019A17F3800848F66 /* UIImage+ImageEffects.h */,
+				7840AD4119A17F3800848F66 /* UIImage+ImageEffects.m */,
+			);
+			name = ViewBlur;
 			sourceTree = "<group>";
 		};
 		78454F65199C96B500563F95 = {
@@ -373,6 +385,7 @@
 		78575374199D8C830047DE7C /* API */ = {
 			isa = PBXGroup;
 			children = (
+				7840AD3F19A17F2200848F66 /* ViewBlur */,
 				785753C9199DCE4A0047DE7C /* MBProgressHUD */,
 				78575375199D91380047DE7C /* GoalBar */,
 			);
@@ -592,6 +605,7 @@
 				785753CC199DCE4A0047DE7C /* MBProgressHUD.m in Sources */,
 				785753BD199D998F0047DE7C /* KDGoalBar.m in Sources */,
 				78454F7E199C96B500563F95 /* main.m in Sources */,
+				7840AD4219A17F3800848F66 /* UIImage+ImageEffects.m in Sources */,
 				7817937E199F2BF800760372 /* ExerciseTableViewController.m in Sources */,
 				785753C8199DCDFB0047DE7C /* ToolMethod.m in Sources */,
 				785753BF199D998F0047DE7C /* SoundPlayer.m in Sources */,

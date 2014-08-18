@@ -29,24 +29,37 @@
 //
 //    [self.view addSubview:countDownView];
     
-    UILabel* tlabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 200, 40)];
-    [tlabel setTextAlignment:NSTextAlignmentCenter];
-    tlabel.font = [UIFont fontWithName:FUTURA_FONT size:16.0];
-    tlabel.textColor = [UIColor blackColor];
-    tlabel.backgroundColor = [UIColor clearColor];
-    tlabel.adjustsFontSizeToFitWidth = YES;
-    tlabel.text = MARCUSBONDI;
-    
-    [tlabel sizeToFit];
-    self.navigationItem.titleView = tlabel;
-    
-    self.view.backgroundColor = [[UIColor alloc]initWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:1.0];
+//    UILabel* tlabel = [[UILabel alloc] initWithFrame:CGRectMake(0,0, 200, 40)];
+//    [tlabel setTextAlignment:NSTextAlignmentCenter];
+//    tlabel.font = [UIFont fontWithName:FUTURA_FONT size:16.0];
+//    tlabel.textColor = [UIColor blackColor];
+//    tlabel.backgroundColor = [UIColor clearColor];
+//    tlabel.adjustsFontSizeToFitWidth = YES;
+//    tlabel.text = MARCUSBONDI;
+//    
+//    [tlabel sizeToFit];
+//    self.navigationItem.titleView = tlabel;
+//    
+//    self.view.backgroundColor = [[UIColor alloc]initWithRed:238.0/255.0 green:238.0/255.0 blue:238.0/255.0 alpha:1.0];
     
 
     
+    
+    [self configDescLabel];
     [self configStartButton];
     
 }
+
+-(void)configDescLabel
+{
+    if (![ToolMethod isIPHONE5]) {
+        
+        descLabel.frame = CGRectMake(descLabel.frame.origin.x, descLabel.frame.origin.y+5, descLabel.frame.size.width, 300);
+        descLabel.adjustsFontSizeToFitWidth = YES;
+        
+    }
+}
+
 
 
 -(void)configStartButton{
@@ -54,7 +67,7 @@
     [startWorkoutBtn setTitleColor:[UIColor whiteColor] forState:UIControlStateSelected];
     
     if (![ToolMethod isIPHONE5]) {
-        startWorkoutBtn.frame = CGRectMake(0, descLabel.frame.origin.y+descLabel.frame.size.height-10, DeviceWidth, 35);
+        startWorkoutBtn.frame = CGRectMake(0, descLabel.frame.origin.y+descLabel.frame.size.height, DeviceWidth, 43);
     }
     
 }

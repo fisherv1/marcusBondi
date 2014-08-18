@@ -20,11 +20,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="16" adjustsFontSizeToFit="NO" id="dyF-HB-Nht">
-                                <rect key="frame" x="28" y="127" width="272" height="328"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="17" adjustsFontSizeToFit="NO" id="dyF-HB-Nht">
+                                <rect key="frame" x="20" y="132" width="287" height="373"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <string key="text">By Official Guinness World Record Holder Marcus Bondi.This 360 second workout will get every muscle ripped - anywhere!Intense body weight training circuit for beginners and advanced hits every major muscle group to build strong muscular arms, chest, abs and legs!Each exercise is performed to maximum reps until failure or a maximum duration of 30 seconds; whichever comes first. Rest for a maximum of 30 seconds between exercises; there are 6 exercises with 30 seconds rest in between equalling a total of 6 minutes from the start of your first exercise to the end of your last exercise.Half or partial range-of-motion reps are allowed if you have exhausted your energy– just try to get 30 seconds of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat entire session immediately!OK, this is it, start now!</string>
-                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="15"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VHY-HP-9A6">
@@ -32,7 +32,7 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <color key="backgroundColor" red="0.13725490200000001" green="0.1215686275" blue="0.12549019610000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="19"/>
-                                <state key="normal" title="GET WORKOUT">
+                                <state key="normal" title="START WORKOUT">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>

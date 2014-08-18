@@ -19,11 +19,11 @@
     CGFloat pixelHeight = (CGRectGetHeight(mainScreen.bounds) * scale);
     
     if(pixelHeight == 1136.0f) {
-        NSLog(@"isIPHONE5");
+        //NSLog(@"isIPHONE5");
         return TRUE;
     }
     
-    NSLog(@"isIPHONE4");
+   // NSLog(@"isIPHONE4");
     return FALSE;
 }
 #pragma mark -
