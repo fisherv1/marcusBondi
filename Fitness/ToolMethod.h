@@ -24,4 +24,9 @@
 + (BOOL) isIPHONE5;
 + (BOOL) isIOS7;
 + (void) playBeepSound ;
+
+
+
+
+
 @end

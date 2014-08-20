@@ -25,6 +25,8 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
     BOOL isTimerStart;
     
     UIActionSheet *sheetAlter;
+    
+       AVAudioPlayer *playerSound;
 }
 @end
 
@@ -53,7 +55,7 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
         [self setupCountDown];
         [self setupStartBtn];
         [self setupEndBtn];
-        
+        [self setupBeatMusic];
     }
     return self;
 }
@@ -71,6 +73,7 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
         startButton = [[circleButton alloc]initWithFrame:CGRectMake(65,countDownLabel.frame.origin.y+countDownLabel.frame.size.height+5, 70, 70)];
     }
 
+    
 
     
     startButton.borderColor = [UIColor greenColor];
@@ -129,7 +132,10 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
 
 - (IBAction)startAction:(id)sender {
     
+    
         if (isTimerPause) {
+            
+            [self pauseBeatMusic];
             isTimerPause = NO;
             [startButton setTitle:RESUME forState:UIControlStateNormal];
             startButton.titleLabel.text = RESUME;
@@ -139,6 +145,10 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
             [timer invalidate];
    
         }else{
+            
+            
+            
+            [self playBeatMusic];
             
             isTimerPause = YES;
             startButton.borderColor =[UIColor redColor];
@@ -183,7 +193,7 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
     
    // isTimerPause = YES;
     [timer invalidate];
-
+    [self pauseBeatMusic];
     
     sheetAlter = [[UIActionSheet alloc] initWithTitle:@"" delegate:self cancelButtonTitle:@"Cancel" destructiveButtonTitle:@"End Workout" otherButtonTitles:nil, nil];
     sheetAlter.delegate=self;
@@ -214,6 +224,7 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
     switch (buttonIndex) {
         case 0:
             if (delegate) {
+                [self stopBeatMusic];
                 [delegate goBackToLastViewController];
             }
             break;
@@ -221,6 +232,7 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
             if (isTimerPause) {
                 [self startTimer];
             }
+            [self playBeatMusic];
             //isTimerPause = NO;
             
       
@@ -270,6 +282,51 @@ const float KBUTTON_BORDER_SIZE = 2.0f;
   //  endButton.enabled = NO;
   //  endButton.borderColor =[UIColor grayColor];
    // [endButton setTitleColor:[UIColor grayColor] forState:UIControlStateNormal];
+}
+
+
+
+-(void)setupBeatMusic
+{
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"beat"
+                                         ofType:@"m4a"]];
+    
+    NSError *error;
+    playerSound = [[AVAudioPlayer alloc]
+                   initWithContentsOfURL:url
+                   error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        playerSound.delegate = self;
+        [playerSound prepareToPlay];
+    }
+}
+
+- (void) playBeatMusic {
+    
+    
+    [playerSound play];
+    
+}
+
+-(void)pauseBeatMusic
+{
+    [playerSound pause];
+}
+
+-(void)resumeBeatMusic
+{
+    [playerSound play];
+}
+
+-(void)stopBeatMusic
+{
+    [playerSound stop];
+    playerSound = nil;
 }
 
 

@@ -9,8 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "circleButton.h"
 #import "countDownViewGoBackDelegate.h"
+#import <AVFoundation/AVAudioPlayer.h>
 
-@interface CountDownView : UIView<UIActionSheetDelegate>
+@interface CountDownView : UIView<UIActionSheetDelegate,AVAudioPlayerDelegate>
 @property (nonatomic, assign) id<countDownViewGoBackDelegate> delegate;
 
 @end

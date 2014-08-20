@@ -1,24 +1,43 @@
 /* Localized versions of Info.plist keys */
 
-"instruction_header" = "6 Min Muscle & Abs-builder Fitness Workout";
+"instruction_header" = "6 min Arms & Abs Muscle Fitness Workout";
 
-"instruction_description" = "By Official Guinness World Record Holder Marcus Bondi.This 360 second workout will get every muscle ripped - anywhere!Intense body weight training circuit for beginners and advanced hits every major muscle group to build strong muscular arms, chest, abs and legs!Each exercise is performed to maximum reps until failure or a maximum duration of 30 seconds; whichever comes first. Rest for a maximum of 30 seconds between exercises; there are 6 exercises with 30 seconds rest in between equalling a total of 6 minutes from the start of your first exercise to the end of your last exercise.Half or partial range-of-motion reps are allowed if you have exhausted your energy– just try to get 30 seconds of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat entire session immediately!OK, this is it, start now!";
+//"instruction_description" = "By Official Guinness World Record Holder Marcus Bondi.This 360 second workout will get every muscle ripped - anywhere!Intense body weight training circuit for beginners and advanced hits every major muscle group to build strong muscular arms, chest, abs and legs!Each exercise is performed to maximum reps until failure or a maximum duration of 30 seconds; whichever comes first. Rest for a maximum of 30 seconds between exercises; there are 6 exercises with 30 seconds rest in between equalling a total of 6 minutes from the start of your first exercise to the end of your last exercise.Half or partial range-of-motion reps are allowed if you have exhausted your energy– just try to get 30 seconds of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat entire session immediately!OK, this is it, start now!";
+
+//"instruction_description" = "This fast & effective workout will build every muscle & can be done anywhere, anytime!\nGuaranteed to build strong muscular arms, chest, abs and legs! The intensity is adjustable to suit your progress.\nThere are 6 exercises with up to 30 seconds rest in between; a max of 6 mins from start to end.\nEach exercise is performed until failure - or for 30 seconds; whichever comes first. Rest for a max of 30 secs between exercises; reduce rest time to up the intensity &results!\nHalf or partial range-of-motion reps are OK if you have exhausted your energy– just try to get 30 secs of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat immediately!\nOK, this is it, start now! You will succeed!";
+"instruction_description" = "This fast & effective workout will build every muscle & can be done anywhere, anytime!Guaranteed to build strong muscular arms, chest, abs and legs! \nThe intensity is adjustable to suit your progress.\nThere are 6 exercises with up to 30 seconds rest in between; a max of 6 mins from start to end.\nEach exercise is performed until failure - or for 30 seconds; whichever comes first. Rest for a max of 30 secs between exercises; reduce rest time to up the intensity &results!Half or partial range-of-motion reps are OK if you have exhausted your energy– just try to get 30 secs of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat immediately!\nOK, this is it, start now! You will succeed!";
+
+"instruction_red_para1_start" = "This fast & effective workout will build every muscle & can be done anywhere, anytime!Guaranteed to build strong muscular arms, chest, abs and legs! \nThe intensity is adjustable to suit your progress.";
+
+
+"instruction_red_para1" = "\nThere are 6 exercises with up to 30 seconds rest in between; a max of 6 mins from start to end. ";
+
+"instruction_red_para2_start" = "This fast & effective workout will build every muscle & can be done anywhere, anytime!Guaranteed to build strong muscular arms, chest, abs and legs! \nThe intensity is adjustable to suit your progress.\nThere are 6 exercises with up to 30 seconds rest in between; a max of 6 mins from start to end.Each exercise is performed until failure - or for 30 seconds; whichever comes first. Rest for a max of 30 secs between exercises; reduce rest time to up the intensity &results! ";
+
+
+"instruction_red_para2" = "Half or partial range-of-motion reps are OK if you have exhausted your energy– just try to get 30 secs of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat immediately! ";
+
+"instruction_bold_para_start" = "This fast & effective workout will build every muscle & can be done anywhere, anytime!Guaranteed to build strong muscular arms, chest, abs and legs! \nThe intensity is adjustable to suit your progress.\nThere are 6 exercises with up to 30 seconds rest in between; a max of 6 mins from start to end.\nEach exercise is performed until failure - or for 30 seconds; whichever comes first. Rest for a max of 30 secs between exercises; reduce rest time to up the intensity &results!Half or partial range-of-motion reps are OK if you have exhausted your energy– just try to get 30 secs of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat immediately!";
+
+
+"instruction_bold_para" = "OK, this is it, start now! You will succeed!";
+
 
 
 "ex1_title" = "Shoulder-width push ups";
-"ex1_desc" = "Place your hands shoulder-width apart and keep your body straight from shoulders to ankles and bend elbows backwards. Go partial reps if you have to, but continue for 30 seconds. Rest 30 seconds before next exercise.";
+"ex1_desc" = "Place your hands shoulder-width apart & keep your body straight from shoulders to ankles & bend elbows backwards. Go partial reps if you have to, but continue for 30 seconds. Beginners can do push ups from knees. Rest up to 30 secs before next exercise.";
 
 "ex2_title" = "Bicycle Crunches";
-"ex2_desc" = "Lie flat on your back, put your hands lightly behind your ears, then raise your shoulders/core and twist your shoulders so your elbow reaches towards your opposite knee as you bring it up to meet your elbow (eg; left elbow to right knee). Extend your other leg straight out and alternate, aiming to touch elbow to opposite knee. Go fast and smooth. Go for 30 secs and rest for 30 secs before moving on to next exercise.";
+"ex2_desc" = "Lie flat on your back, put your hands lightly behind your ears, then raise your shoulders/core and twist your shoulders so your elbow reaches towards your opposite knee as you bring it up to meet your elbow (eg; left elbow to right knee). Extend your other leg straight out and alternate, aiming to touch elbow to opposite knee. Go fast and smooth. Go for 30 secs & rest for up to 30 secs before next exercise.";
 
 "ex3_title" = "Diamond Push Ups";
-"ex3_desc" = "Hold your hands out in front of you and place index fingers and thumbs together to make a ‘diamond’ shape. Start push ups with your hands close together in ‘diamond’ position and your elbows bending out to the side as your chest touches your knuckles. Go for 30 seconds, then rest 30 seconds before next exercise.";
+"ex3_desc" = "Hold your hands out in front of you and place index fingers and thumbs together to make a ‘diamond’ shape. Start push ups with your hands close together in ‘diamond’ position and your elbows bending out to the side as your chest touches your knuckles. Go for 30 secs & then rest for up to 30 secs before next exercise.";
 
 "ex4_title" = "Double leg squat jumps";
-"ex4_desc" = "Stand with feet shoulder-wide and jump high into the air; reach up with both hands to as high as you can. Land as smoothly as possible, bending knees. Jump for 30 seconds, even if you finish with mini-squats Rest 30 seconds then move on.";
+"ex4_desc" = "Stand with feet shoulder-wide and jump high into the air; reach up with both hands to as high as you can. Land as smoothly as possible, bending knees. Jump for 30 seconds, even if you finish with mini-squats Rest 30 seconds then move on.Rest for up to 30 secs then move on.";
 
 "ex5_title" = "Bicycle Crunches";
-"ex5_desc" = "Lie flat on your back, put your hands lightly behind your ears, then raise your shoulders/core and twist your shoulders so your elbow reaches towards your opposite knee as you bring it up to meet your elbow (eg; left elbow to right knee). Extend your other leg straight out and alternate, aiming to touch elbow to opposite knee. Go fast and smooth. Go for 30 secs and rest for 30 secs before moving on to next exercise.";
+"ex5_desc" = "Lie flat on your back, put your hands lightly behind your ears, then raise your shoulders/core and twist your shoulders so your elbow reaches towards your opposite knee as you bring it up to meet your elbow (eg; left elbow to right knee). Extend your other leg straight out and alternate, aiming to touch elbow to opposite knee. Go fast and smooth. Go for 30 secs & rest for up to 30 secs before next exercise.";
 
 "ex6_title" = "Asymmetrical Push Ups";
-"ex6_desc" = "Place one hand ‘high’ near face and one ‘low’ near chest - switch hands for each push up. This technique will cross-weave muscle-fibres and build muscular shoulders and chest. Go for 30 seconds then rest 30 seconds.";
+"ex6_desc" = "Place one hand ‘high’ near face and one ‘low’ near chest - switch hands for each push up. This technique will cross-weave muscle-fibres and build muscular shoulders and chest. Go for 30 secs & rest for up to 30 secs.";

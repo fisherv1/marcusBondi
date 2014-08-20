@@ -10,6 +10,9 @@
 #import <AudioToolbox/AudioToolbox.h>
 
 @implementation ToolMethod
+{
+
+}
 
 
 #pragma mark judge is iphone5
@@ -121,7 +124,6 @@
      
      AudioServicesCreateSystemSoundID((__bridge CFURLRef)url, &soundID);
      AudioServicesPlaySystemSound (soundID);
-
 }
 
 

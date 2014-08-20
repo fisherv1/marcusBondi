@@ -264,7 +264,16 @@
         
         UIImage *img = [exercise.ImagesArray objectAtIndex:i];
         
+        
         UIImageView *imgView = [[UIImageView alloc]initWithFrame:CGRectMake(i*DeviceWidth, 0, DeviceWidth , scrollView.frame.size.height)];
+        
+        //this is for exercise 4 , second image, it's protrait
+        if (exercise.exerciseID == 4 && i==1) {
+            int imageWidth = 200;
+            imgView.frame =CGRectMake(imgView.frame.origin.x+DeviceWidth/2-imageWidth/2, 0, imageWidth , imgView.frame.size.height);
+        }
+        
+        
         
         imgView.image = img;
         

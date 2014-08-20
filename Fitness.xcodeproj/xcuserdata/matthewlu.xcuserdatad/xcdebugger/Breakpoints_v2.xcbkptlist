@@ -20,11 +20,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "Fitness/ExerciseDetailViewController.m"
-            timestampString = "430014916.62481"
+            timestampString = "430123460.964209"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "286"
-            endingLineNumber = "286"
+            startingLineNumber = "295"
+            endingLineNumber = "295"
             landmarkName = "-addCountDownView"
             landmarkType = "5">
          </BreakpointContent>

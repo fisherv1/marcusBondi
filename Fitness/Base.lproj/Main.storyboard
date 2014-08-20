@@ -13,18 +13,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 Min Muscle &amp; Abs-builder Fitness Workout" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hz7-Ml-NPp">
-                                <rect key="frame" x="28" y="62" width="264" height="90"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="6 min Arms &amp; Abs Muscle Fitness Workout" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="hz7-Ml-NPp">
+                                <rect key="frame" x="24" y="13" width="264" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="29"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="17" adjustsFontSizeToFit="NO" id="dyF-HB-Nht">
-                                <rect key="frame" x="20" y="132" width="287" height="373"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" adjustsFontSizeToFit="NO" id="dyF-HB-Nht">
+                                <rect key="frame" x="13" y="121" width="296" height="390"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <string key="text">By Official Guinness World Record Holder Marcus Bondi.This 360 second workout will get every muscle ripped - anywhere!Intense body weight training circuit for beginners and advanced hits every major muscle group to build strong muscular arms, chest, abs and legs!Each exercise is performed to maximum reps until failure or a maximum duration of 30 seconds; whichever comes first. Rest for a maximum of 30 seconds between exercises; there are 6 exercises with 30 seconds rest in between equalling a total of 6 minutes from the start of your first exercise to the end of your last exercise.Half or partial range-of-motion reps are allowed if you have exhausted your energy– just try to get 30 seconds of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat entire session immediately!OK, this is it, start now!</string>
-                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="17"/>
+                                <string key="text">This fast &amp; effective workout will build every muscle &amp; can be done anywhere, anytime!
+Guaranteed to build strong muscular arms, chest, abs and legs! The intensity is adjustable to suit your progress.
+There are 6 exercises with up to 30 seconds rest in between; a max of 6 mins from start to end. 
+Each exercise is performed until failure - or for 30 seconds; whichever comes first. Rest for a max of 30 secs between exercises; reduce rest time to up the intensity &amp;results! 
+Half or partial range-of-motion reps are OK if you have exhausted your energy– just try to get 30 secs of intense muscle movement. As you get stronger, do it twice or more times every day. Or repeat immediately!
+OK, this is it, start now! You will succeed!</string>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="19"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="VHY-HP-9A6">
@@ -39,13 +44,40 @@
                                     <action selector="startWorkoutAction:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="BqI-fO-BPV"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Created by Official Guinness World Record Holder" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="YrP-FL-ava">
+                                <rect key="frame" x="24" y="83" width="279" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Futura-CondensedMedium" family="Futura" pointSize="16"/>
+                                <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" hasAttributedTitle="YES" id="OaY-fA-jfE">
+                                <rect key="frame" x="92" y="104" width="121" height="16"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="tintColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="www.MarcusBondi.com">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.40784317255020142" blue="0.81176477670669556" alpha="1" colorSpace="deviceRGB"/>
+                                                <font key="NSFont" size="16" name="Futura-CondensedMedium"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="goToWeb:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="jR8-5d-QsZ"/>
+                                </connections>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="UUZ-BT-ROq"/>
                     <connections>
                         <outlet property="descLabel" destination="dyF-HB-Nht" id="ybG-Hd-S67"/>
                         <outlet property="startWorkoutBtn" destination="VHY-HP-9A6" id="pAF-x6-Dpn"/>
+                        <outlet property="weblinkLabel" destination="OaY-fA-jfE" id="gYR-l7-jJ5"/>
                         <segue destination="7U3-HU-R7Y" kind="push" identifier="HomeToExerciseTable" id="Z5k-mC-deX"/>
                     </connections>
                 </viewController>

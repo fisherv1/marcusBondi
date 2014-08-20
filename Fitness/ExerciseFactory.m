@@ -42,7 +42,7 @@
     ex4.exerciseID = 4;
     ex4.title = GetInfoString(@"ex4_title");
     ex4.descriptions = GetInfoString(@"ex4_desc");
-    ex4.ImagesArray =@[[UIImage imageNamed:@"4_1.jpg"],[UIImage imageNamed:@"4_2.jpg"]];
+    ex4.ImagesArray =@[[UIImage imageNamed:@"4_1.jpg"],[UIImage imageNamed:@"4_2_1.jpg"]];
     //Ex5
     
     Exercise *ex5 = [[Exercise alloc]init];

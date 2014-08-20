@@ -10,6 +10,7 @@
 
 
 @interface ViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIButton *weblinkLabel;
 
 
 @property (weak, nonatomic) IBOutlet UIButton *startWorkoutBtn;
